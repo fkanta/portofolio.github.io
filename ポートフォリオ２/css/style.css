@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+
+/* common */
+
+
+*{
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+
+body{
+	color: #444;
+	line-height: 1.6;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	vertical-align: bottom;
+}
+
+.clearfix:after{
+  content:"";
+  clear: both;
+  display: block;
+}
+
+.wrap{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 60px 10px;
+}
+
+.top-title{
+	display: inline-block;
+	font-size: 35px;
+	font-weight: bold;
+	margin-bottom: 50px;
+	font-family: 'Francois One', sans-serif;
+}
+
+.bg-gray{
+	background-color: #f5f5f5;
+}
+
+.bg-black{
+	background-color: #222;
+}
+
+
+/* header */
+
+
+.header-nav a:hover{
+	opacity: .8;
+}
+
+#top-header{
+	width: 100%;
+	background-color: #fff;
+	z-index: 1;
+	display: flex;
+	height: 50px;
+	line-height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #5e5e5e;
+	transition: .8s;
+}
+
+.top-header-scroll{
+	background-color: #222!important;
+	color: #fff;
+	border-bottom: 1px solid #fff!important;
+	transition: 0.8s;
+}
+
+.marker{
+	color: skyblue;
+}
+
+.header-logo{
+	display: block;
+	margin-left: 35px;
+	font-weight: bold;
+}
+
+.header-logo a{
+	font-size: 25px;
+	font-family: 'Francois One', sans-serif;
+
+}
+
+#menu{
+	position: static;
+	font-size: 0;
+	margin-left: auto;
+}
+
+#menu li{
+	margin: 0 35px 0 0;
+	display: inline-block;
+}
+
+#menu a{
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Francois One', sans-serif;
+}
+
+
+/* eyecatch */
+
+
+#eyecatch{
+ background: url('../img/coast-2221017_1920.jpg') no-repeat;
+ background-size: cover;
+ background-position: 50% 100%;
+ height: 650px;
+ border-bottom: 1px solid #5e5e5e;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#eyecatch p{
+	color: #000;
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+
+/* news */
+
+
+#news p{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#news p:last-child{
+	margin-bottom: 0;
+}
+
+#news li{
+	margin-bottom: 10px;
+}
+
+#news li:hover{
+	opacity: .5;
+}
+
+#news span{
+	margin-right: 40px;
+}
+
+
+/* service */
+
+
+#service{
+	background-image: url('../img/bg_service.png');
+}
+
+.service-box{
+	height: 450px;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+.service-box:last-child{
+	margin-bottom: 0;
+}
+
+.service-box-img {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.service-more{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-more p{
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.service-box-img1{
+	background: url('../img/business1.jpg') no-repeat;
+	background-size: cover;
+}
+
+.service-box-img2{
+	background: url('../img/business2.jpg') no-repeat;
+	background-size: cover;
+}
+
+.service-box-img3{
+	background: url('../img/business3.jpg') no-repeat;
+	background-size: cover;
+}
+
+.service-text{
+	box-sizing: border-box;
+	padding: 30px 10px;
+}
+
+.service-box h3{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.service-text p{
+	margin-top: 30px;
+	font-size: 14px;
+}
+
+@media screen and (min-width: 680px) {
+
+	.service-cat{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.service-box{
+		width: 32%;
+		margin-bottom: 0;
+	}
+
+}
+
+
+/* company */
+
+
+#company{
+	color: #fff;
+}
+
+.info table{
+	width: 100%;
+}
+
+.info th,
+.info td{
+	font-weight: bold;
+	padding: 15px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.info td{
+	border-bottom: 1px solid #a5a5a5;
+}
+
+@media screen and (min-width: 680px) {
+
+	.info th,
+	.info td{
+		display: table-cell;
+	}
+
+	.info th{
+		border-bottom: 1px solid #a5a5a5;
+		vertical-align: top;
+		white-space: nowrap;
+		width: 30%;
+	}
+
+	.info td{
+		width: 70%;
+	}
+
+}
+
+
+/* contact */
+
+
+.form-left,
+.form-right{
+	width: 100%;
+}
+
+.form-left-in{
+	margin-bottom: 20px;
+}
+
+#contact input,
+#contact textarea{
+	width: 100%;
+	border: 1px solid #999;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border-radius: 2px;
+}
+
+#contact input{
+	height: 30px;
+}
+
+#contact textarea{
+	height: 180px;
+}
+
+.form-btn{
+	text-align: center;
+}
+
+.form-btn button{
+	border: none;
+	width: 40%;
+	height: 50px;
+	font-size: 18px;
+	margin-top: 30px;
+	background-color: #222;
+	color: #fff;
+	font-weight: bold;
+}
+
+.form-btn button:hover{
+	opacity: .8;
+}
+
+@media screen and (min-width: 680px) {
+
+	.form-left{
+		float: left;
+		width: 48%;
+	}
+
+	.form-right{
+		float: right;
+		width: 48%;
+	}
+
+	.form-left-in:not(:last-child){
+		margin-bottom: 20px;
+	}
+
+}
+
+
+/* footer */
+
+
+#footer{
+	height: 80px;
+	line-height: 80px;
+	font-size: 12px;
+	text-align: center;
+}
